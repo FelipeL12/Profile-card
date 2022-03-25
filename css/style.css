@@ -1,0 +1,54 @@
+/* GLOBAL */
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+:root {
+    --color_dark_cyan: hsl(185, 75%, 39%);
+    --color_very_dark_desaturated_blue: hsl(229, 23%, 23%);
+    --color_dark_grayish_blue: hsl(227, 10%, 46%);
+    --color_dark_gray: hsl(0, 0%, 59%);
+    --color_white: hsl(221, 0%, 100%);
+    --color_black: hsl(221, 0%, 0%);
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+/* UTILITIES */
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+/* MAINT CONTENT */
+
+/* CONTAINERS */
+.container {
+    width: 100%;
+    display: flex;
+}
+
+.card_container {
+    width: 50%;
+    margin: 15rem auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+/* MEDIA QUERIES */
+@media (min-width:1000px) {}
