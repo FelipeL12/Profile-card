@@ -1,7 +1,7 @@
 /* GLOBAL */
 * {
-    padding: 0%;
-    margin: 0%;
+    padding: 0rem;
+    margin: 0rem;
 }
 
 :root {
@@ -21,6 +21,12 @@ html {
 body {
     font-size: 16px;
     font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--color_dark_cyan);
+    background-image: url(/images/bg-pattern-top.svg);
+    background-repeat: no-repeat;
+    background-position: -17rem -17rem;
+    background-size: 40rem;
+
 }
 
 /* UTILITIES */
@@ -38,14 +44,104 @@ body {
 .container {
     width: 100%;
     display: flex;
+    background-image: url(/images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: 17rem 57rem;
+    background-size: 40rem;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .card_container {
-    width: 50%;
-    margin: 15rem auto;
-    justify-content: center;
-    align-items: center;
+    margin: 20rem 2rem;
     text-align: center;
+    background-color: var(--color_white);
+    border: none;
+    border-radius: 1.5rem;
+}
+
+/* PROFILE CONTENT  */
+
+/* BACKGROUND IMAGE PROFILE */
+.back_profile_image {
+    width: 100%;
+}
+
+.back_profile_image img {
+    width: 100%;
+    border: none;
+    border-top-right-radius: 1.5rem;
+    border-top-left-radius: 1.5rem;
+}
+
+/* PROFILE PICTURE */
+.profile_picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile_picture img {
+    border-radius: 50%;
+    position: absolute;
+    border: solid 0.5rem var(--color_white);
+}
+
+/* PROFILE PERSONAL INFO */
+.profile_personal_info {
+    margin: 7rem 1rem 1rem 1rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.profile_personal_info h1 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.profile_personal_info span {
+    display: inline-block;
+    margin-left: 1rem;
+    color: var(--color_dark_grayish_blue);
+    font-weight: 400;
+}
+
+.profile_personal_info p {
+    margin-top: 1rem;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: var(--color_dark_grayish_blue);
+}
+
+/* PROFILE INFO */
+.profile_info {
+    margin: 4rem 1rem 2rem 1rem;
+    border-top: solid 0.1rem var(--color_dark_gray);
+    grid: 1fr / 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.followers,
+.likes,
+.photos {
+    margin: 3rem 0rem 1rem 0rem;
+}
+
+.followers h1,
+.likes h1,
+.photos h1 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.followers span,
+.likes span,
+.photos span {
+    color: var(--color_dark_grayish_blue);
+    font-weight: 400;
+    font-size: 1.1rem;
+    letter-spacing: 0.2rem;
 }
 
 
