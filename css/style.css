@@ -147,4 +147,17 @@ body {
 
 
 /* MEDIA QUERIES */
-@media (min-width:1000px) {}
+@media (min-width:1000px) {
+
+ /* GENERALS */
+    body {
+        background-position: 7rem -50rem;
+        background-size: 90rem;
+    }
+
+    /* CONTAINERS */
+    .container {
+        background-position: 95rem 45rem;
+        background-size: 90rem;
+    }
+}
